@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Restaurant Name</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Delicious Food. Warm Atmosphere.</p>
+  </header>
+
+  <!-- Restaurant Menu (Grid Layout) -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row g-4">
+      <!-- Menu Item 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.uzr_n8cZxyVtDaOxHK3tcwHaEK?w=322&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image"width="400px" height="200vtS" >
+
+          <div class="card-body">
+            <h5 class="card-title">FRESH WHOLE WEAT CHAPATHI</h5>
+            <p class="card-text">A delicious dish made with fresh ingredients.</p>
+            <p class="text-muted">$350</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.5l-sUrth0kbLqcqaAh6fzAHaEo?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image" width="400px" height="200vtS">
+
+          <div class="card-body">
+            <h5 class="card-title">SOUTHRUN CHICKEN</h5>
+            <p class="card-text">A savory meal with a delightful flavor.</p>
+            <p class="text-muted">$250</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.amw8y-oLhcxvuu5ATHXjjAHaEK?w=326&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="image"width="400px" height="200vtS">
+          <div class="card-body">
+            <h5 class="card-title">BURGER</h5>
+            <p class="card-text">A perfect combination of spices and taste.</p>
+            <p class="text-muted">$ RS.300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">We are passionate about serving you the best food. Our menu is carefully crafted with fresh ingredients and authentic recipes.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Restaurant Name | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

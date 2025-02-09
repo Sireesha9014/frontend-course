@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+
+<body>
+  <div class="container">
+
+    <div class="row" id="RamcharanMovies">
+  
+    </div>
+    </div>
+    <script>
+ const movieList=[{
+        name:"Gamechanger",
+        jonor:"Polictical",
+        image:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny40LzEwICA5MC4ySyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00311772-dyqxbymvgu-portrait.jpg"
+
+},
+{
+
+        name:"Deva",
+        jonor:"action",
+         image:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny40LzEwICAyLjNLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00374104-dnppdsswxh-portrait.jpg"
+},
+
+{
+        name:"Sankranthikivasthunnam",
+        jonor:"Comedy",
+        image:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA4Mi41SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00418119-urxwxzudkv-portrait.jpg"
+}     
+];
+
+
+
+const rendermovieList = movieList.map((copyofmovieList)=>{
+    return `
+    <div class="col-3" >
+      <main>
+        <section class="movies"  style="width:300px;">
+         <h2>NowShowing</h2>
+  
+         <img src=${copyofmovieList.image} alt="Movie 1" alt="image"height="300px"/>
+           <div class="movie-card">
+             <h1 class="card title" style="font-size:20px">${copyofmovieList.name} </h1> 
+               <h2 class="subtitle">${copyofmovieList.jonor} </h2>
+            <button onlclick="seats"style="background-color:red;  color:white;"> seats-300</button>          
+             <button onclick="bookTicket"   style="background-color:blue;  color:white;" >Book Tickets</button>
+            </div>
+      </main>
+      </div>
+      `;
+    });
+    RamcharanMovies.innerHTML=rendermovieList .join("");
+   constMovieListInHtml=document.getElementById("RamcharanMovies");
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: sans-serief;
+    box-sizing: border-box;
+
+}
+
+
+
+body h1{
+    text-align: center;
+    padding:20px;
+    background-color: rgb(19, 105, 139);
+    color:rgb(28, 3, 6);
+
+}
+h2{
+    text-align: center;
+    padding:20px;
+    background-color: rgb(139, 19, 19);
+    color:rgb(215, 200, 200);
+    font-weight:800;
+
+}
+nav{
+    background-color: rgb(75, 231, 75);
+    display: grid;
+    place-items:center;
+}
+nav ul{
+    list-style-type:none;
+
+}
+nav ul a{
+    display:inline-block;
+    padding:20px;
+    text-decoration:none ;
+color:000#;
+transition:0.2s ease-in;
+font-size:18px;
+
+}
+nav ul a:hover{
+    background-color: rgb(6, 0, 128);
+    color:white;
+
+
+}
+nav ul button{
+    background-color: brown;
+    max-width:150px;
+    color:azure;
+    margin: 20px;
+    padding:10px;
+    border:radius;
+   
+
+}

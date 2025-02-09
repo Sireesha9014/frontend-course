@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BookMyShow Clone</h1>
+    </header>
+
+    <main>
+        <section class="movies">
+            <h2>Now Showing</h2>
+            <div class="movie-card">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny40LzEwICA5MC4ySyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00311772-dyqxbymvgu-portrait.jpg" alt="Movie 1">
+                <h3>Gamechanger</h3>
+                <button onclick="bookTicket('Movie Title 1')">Book Tickets</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA4MC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00418119-urxwxzudkv-portrait.jpg" alt="Movie 2">
+                <h3>Sankrantiki<ul>vasthunnam</ul></h3>
+                <button onclick="bookTicket('Movie Title 2')">Book Tickets</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICA0NTkuN0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00356724-dynwtezcja-portrait.jpg" alt="Movie 3">
+                <h3>pushpa</h3>
+                <button onclick="bookTicket('Movie Title 3')">Book Tickets</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA0NC41SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00383005-jcsvtyanpl-portrait.jpg" alt="Movie 3">
+                <h3>Max</h3>
+                <button onclick="bookTicket('Movie Title 4')">Book Tickets</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICA2My44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00419964-rujfupkfpk-portrait.jpg" alt="Movie 3">
+                <h3>Dakumaharaaj</h3>
+                <button onclick="bookTicket('Movie Title 5')">Book Tickets</button>
+            </div>
+        </section>
+
+        <section id="booking-form">
+            <h2>Booking Form</h2>
+            <form id="form" style="display: none;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" required>
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookMyShow Clone</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
